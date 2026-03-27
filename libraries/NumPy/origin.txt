@@ -1,0 +1,31 @@
+Python originally provided lists, tuples, and dictionaries, but did not have efficient support for multi-dimensional arrays like those needed in scientific computing.
+
+To address this:
+
+In 1995, Jim Hugunin developed a library called Numeric, which introduced array-like structures in Python.
+In the early 2000s, another library called numarray was developed to improve performance for large arrays.
+In 2005, Travis Oliphant combined the best features of both Numeric and numarray to create NumPy.
+🚀 Why NumPy is Faster
+
+NumPy is much faster (up to ~50x) than Python lists because:
+
+-Written in C
+the core of NumPy is implemented in C, so operations are compiled and execute very quickly.
+-Homogeneous Data
+NumPy arrays store elements of the same data type → more memory efficient.
+-Contiguous Memory Storage
+Data is stored in continuous memory blocks → faster access and computation.
+-Vectorization
+Operations are applied to entire arrays at once instead of using Python loops.
+
+Difference Between List and Array (NumPy)
+Feature	                        Python List	                         NumPy Array
+Definition	                Built-in data structure in Python          	Provided by NumPy library
+Data Type	                Can store mixed data types          	Stores only homogeneous data (same type)
+Performance	                Slower for numerical operations     	Much faster (implemented in C)
+Memory Usage	            Uses more memory	                   More memory efficient
+Operations	                Limited (need loops for operations)	   Supports vectorized operations (no loops needed)
+Multidimensional Support	Possible but not efficient	           Efficient handling of multi-dimensional arrays
+Syntax	Simple, built-in	Requires importing NumPy
+Mathematical Operations	Not directly supported (need manual loops)        	Direct mathematical operations supported
+Use Case	                  General-purpose programming          Scientific computing, data analysis, ML
