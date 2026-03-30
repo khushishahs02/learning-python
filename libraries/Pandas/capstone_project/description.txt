@@ -1,0 +1,7 @@
+This project involves performing Exploratory Data Analysis (EDA) on a comprehensive countries.csv
+ dataset using Python, Pandas, and NumPy. The workflow begins with data preprocessing.
+
+Once cleaned, I use vectorized operations and advanced indexing (.loc, .idxmax, and .sort_values) 
+to extract key insights, such as identifying the capital city of the world’s most populous nation
+ and ranking countries by socio-economic metrics. The project demonstrates the ability to turn a 60+
+  column dataset into clear, programmatic answers for global demographic questions. 
