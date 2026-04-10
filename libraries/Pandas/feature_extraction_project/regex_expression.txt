@@ -1,0 +1,16 @@
+Regex works by using a Regex Engine that scans your text character by character to see if it matches
+ the "template" you provided.
+
+->Literal Characters: These match themselves (e.g., eps matches exactly "eps").
+
+->Metacharacters: These are special symbols that represent categories of characters 
+(e.g., \d represents "any digit").
+
+2. The 3 Main Inputs
+When you use Regex in Pandas (like str.extract or str.contains), the function generally takes three types of input:
+
+The Pattern (The Template): A string containing your regex code. In Python, we often use "raw strings" prefixed with r (e.g., r'\d+') so that backslashes are treated literally.
+
+The Target Text: In Pandas, this is the entire column (Series) you are searching through.
+
+Capture Groups (Optional): Indicated by parentheses (). These tell the computer: "I need to look for this whole pattern, but I only want you to return the part inside the parentheses."
